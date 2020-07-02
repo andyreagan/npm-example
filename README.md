@@ -1,5 +1,7 @@
 # Example npm package
 
+Following the instructions on [npm](https://docs.npmjs.com/creating-node-js-modules).
+
 ```
 mkdir npm-example
 cd npm-example
