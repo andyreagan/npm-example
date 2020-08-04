@@ -8,5 +8,5 @@ cd npm-example
 npm init --scope=@andyreagan
 npm adduser
 npm login
-npm publish --access publics
+npm publish --access public
 ```
