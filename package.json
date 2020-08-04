@@ -8,11 +8,15 @@
     "pretest": "rollup -c",
     "test": "eslint src"
   },
+  "files": [
+    "dist/**/*.js",
+    "src/**/*.js"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/andyreagan/npm-example.git"
   },
-  "author": "andy reagan",
+  "author": "Andy Reagan",
   "license": "BSD-2-Clause",
   "bugs": {
     "url": "https://github.com/andyreagan/npm-example/issues"

@@ -8,7 +8,7 @@ export default [
             file: 'dist/npm-example-bundle.js',
             name: 'npmExample',
             format: 'umd',
-            banner: `// ${meta.name} v${meta.version} Copyright ${(new Date).getFullYear()} ${meta.author.name}`
+            banner: `// ${meta.name} v${meta.version} Copyright ${(new Date).getFullYear()} ${meta.author}`
         },
         plugins: [nodeResolve()],
         // known error with circular deps:
@@ -25,7 +25,7 @@ export default [
             file: 'dist/npm-example.js',
             name: 'npmExample',
             format: 'umd',
-            banner: `// ${meta.name} v${meta.version} Copyright ${(new Date).getFullYear()} ${meta.author.name}`,
+            banner: `// ${meta.name} v${meta.version} Copyright ${(new Date).getFullYear()} ${meta.author}`,
             globals: {
                   d3: 'd3'
                 }
