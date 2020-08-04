@@ -1,10 +1,12 @@
 {
   "name": "@andyreagan/npm-example",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "test package",
-  "main": "index.js",
+  "main": "dist/npm-example.js",
+  "module": "src/index.js",
   "scripts": {
-    "test": "exit 0"
+    "pretest": "rollup src/index.js --file dist/npm-example.js --format umd --name npmExample",
+    "test": "eslint src"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/andyreagan/npm-example/issues"
   },
-  "homepage": "https://github.com/andyreagan/npm-example#readme"
+  "homepage": "https://github.com/andyreagan/npm-example#readme",
+  "devDependencies": {
+    "eslint": "^7.6.0"
+  }
 }
