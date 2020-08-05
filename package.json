@@ -1,8 +1,9 @@
 {
   "name": "@andyreagan/npm-example",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "test package",
   "main": "dist/npm-example.js",
+  "unpkg": "dist/npm-example.js",
   "module": "src/index.js",
   "scripts": {
     "pretest": "rollup -c",
